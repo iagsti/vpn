@@ -43,6 +43,7 @@ class Solicitation(models.Model):
     status = models.CharField(_("Status"), max_length=10)
     slug = models.SlugField(_("slug"))
     updated_by = models.ForeignKey("accounts.UserModel", verbose_name=_(
-        "Updated by"), related_name='updated_by', on_delete=models.CASCADE)
+        "Updated by"), related_name='updated_by',
+        on_delete=models.CASCADE, null=True)
     created_at = models.DateTimeField(_("Created at"), auto_now_add=True)
     updated_at = models.DateTimeField(_("Updated at"), auto_now=True)
