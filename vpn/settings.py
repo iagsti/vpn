@@ -61,7 +61,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_oauth_usp.accounts',
-    'django_extensions'
+    'django_extensions',
+    'test_without_migrations',
+    'vpn.core',
 ]
 
 MIDDLEWARE = [
